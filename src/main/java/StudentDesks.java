@@ -14,9 +14,9 @@ class StudentDesks {
         /*
          *  your code goes here
          */
-          int dr1 = r1/2;
-          int dr2 = r2/2;
-          int dr3 = r3/2;
+          int dr1 = (r1/2) + r1%2;
+          int dr2 = (r2/2) + r2%2;
+          int dr3 = (r3/2) + r3%2;
           int total = dr1 + dr2 + dr3;
           System.out.print(total);
 
