@@ -18,8 +18,13 @@ class Timestamps {
         /*
          *  your code goes here
          */
-
-
+         int deltah = hours2 - hours1;
+         int deltam = minutes2 - minutes1;
+         int deltas = seconds2 - seconds1;
+         int TSH = deltah * 3600;
+         int TSM = deltam * 60;
+         int TS = TSM + TSH + deltas;
+         System.out.print(TS);
         // closing the scanner object
         scanner.close();
     }
